@@ -1,12 +1,19 @@
+//Se importa la libreria Scanner 
+import java.util.Scanner;
+
 public class AgeValidation {
     public static void main(String[] args) {
-        int age = 18;
+        //Se crea el objeto scanner
+        Scanner scanner = new Scanner(System.in);
+        //Inicializamos la contante AGE_LIMIT 
+        final int AGE_LIMIT = 18; 
+        //Se pide al usuario ingresar edad por teclado
+        System.out.println("Ingrese su edda: ");
+        int age = scanner.nextInt();
         
-        if (age >= 18) {
+        if (age >= AGE_LIMIT) {
             System.out.println("Access granted");
-        }
-        
-        if (age < 18) {
+        }else{
             System.out.println("Access denied");
         }
     }
