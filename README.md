@@ -10,5 +10,11 @@
 
 2. **Store**:
 
-   
+   - Declarar constantes para eliminar los valores magicos.
+   - Hicimos un array para almacenar los valores de los precios y las cantidades de los productos.
+   - Despues creamos un bucle for para iterra los arreglos y realizar las operaciones y asi obtener la cantidad de ventas.
+
+3. **TaxCalculation**: 
+
+   -
 
