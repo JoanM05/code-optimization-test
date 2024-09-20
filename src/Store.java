@@ -1,21 +1,19 @@
 
 public class Store {
     public static void main(String[] args) {
-
+        //Declaramos constantes
         final int PRODUCT_PRECE_1 = 15;
         final int PRODUCT_PRECE_2 = 10;
         final int PRODUCT_PRECE_3 = 5;
-
         final int PROMEDIO_VENTAS = 50;
-
         final int QUANTITIES_PRODUCT_1 = 1;
         final int QUANTITIES_PRODUCT_2 = 1;
         final int QUANTITIES_PRODUCT_3 = 1;
+        //Creamos arrays
+        int[] productsPrices = {PRODUCT_PRECE_1,PRODUCT_PRECE_2,PRODUCT_PRECE_3};//Almacena los precios de los productos
+        int[] productsQuantities = {QUANTITIES_PRODUCT_1,QUANTITIES_PRODUCT_2,QUANTITIES_PRODUCT_3};//Almacena la cantidad de los productos
 
-        int[] productsPrices = {PRODUCT_PRECE_1,PRODUCT_PRECE_2,PRODUCT_PRECE_3};
-        int[] productsQuantities = {QUANTITIES_PRODUCT_1,QUANTITIES_PRODUCT_2,QUANTITIES_PRODUCT_3}; 
-
-        int totalSales = 0;
+        int totalSales = 0;//Variable que almacene las ventas
 
         for (int i = 0; i<productsPrices.length; i++){
             totalSales += productsPrices[i] * productsQuantities[i];
